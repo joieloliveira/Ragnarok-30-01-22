@@ -259,6 +259,7 @@
 }
 .passo .passoBox .cardPasso span{
     font-family: Poppins;
+    font-weight: bold;
     font-weight: 700;
     font-size: 56px;
     text-align: center;
@@ -273,9 +274,9 @@
     margin: 0;
 }
 .passo .passoBox .cardPasso > p:nth-child(3){
-    font-family: Poppins;
+    font-family: Inter;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: rgba(58, 56, 71, 1);
     margin: 0 0 20px 0;
@@ -439,16 +440,31 @@
     background-color: rgba(248, 249, 250, 1);
     padding-top: 40px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-.rolandoNoServidor > p{
-    margin-left: 90px;
+.rolandoNoServidor .rolandoNoServidor_p{
+    width: 1240px;
+    background-color: aquamarine;
+}
+.rolandoNoServidor .rolandoNoServidor_p > p{
     font-family: Poppins;
     font-size: 24px;
     color: #3A3847;
 }
-.rolandoNoServidor > p span{
+.rolandoNoServidor .rolandoNoServidor_p > p span{
     color: #00CB51;
     font-size: 120%;
+}
+@media(max-width: 1250px){
+    .rolandoNoServidor .rolandoNoServidor_p{
+        width: 95%;
+    }
+}
+@media(max-width: 375px){
+    .rolandoNoServidor .rolandoNoServidor_p > p{
+        font-size: 22px;
+    }
 }
 .rolandoNoServidor .card{
     display: flex;

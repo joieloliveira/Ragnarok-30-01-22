@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class="slideBody">
-            <a href="#">INÍCIO</a>
-            <a href="#">INFORMAÇÔES</a>
-            <a href="#">DOWNLOAD</a>
-            <a href="#">FÓRUM</a>
-            <a href="#">REGISTRAR</a>
-            <a href="#" class="buttonloginSlidbar" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
+            <button>Início</button>
+            <button>Informações</button>
+            <button>Download</button>
+            <button>Doar</button>
+            <button>Registrar</button>
+            <button>Logar</button>
         </div>
     </nav>
     <!-- headerBar -->
@@ -217,6 +217,9 @@
     </div>
     <!-- estatisticas -->
     <div class="estatisticasBG">
+        <div class="estatisticasBG_p">
+            <p>ESTATISTICAS DO <strong>SERVIDOR</strong><span>.</span></p>
+        </div>
         <div class="estatisticas">
             <img src="./img/img/chibi-crusader.png" alt="">
             <div class="estatisticasBox1">
@@ -335,6 +338,9 @@
     <script>
         $('.rServidorCarrosel').owlCarousel({
             responsiveClass: true,
+            nav: true,
+            navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
+            loop: true,
             responsive: {
                 250: {
                     items: 2,
@@ -369,7 +375,10 @@
                     nav: false,
                 },
             }
-        });
+
+        })
+        $(".owl-next").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/bbb447994b253bea1bb81b002e3413b2.svg" />');
+        $(".owl-prev").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/20bd4ea61b53e89f4d8c6531d59f19ab.svg" />');
         $('.guerraEmperium').owlCarousel({
             loop: true,
             margin: 0,

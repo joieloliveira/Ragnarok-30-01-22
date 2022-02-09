@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragnarok</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="overlay"></div>
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <button>Início</button>
+            <button>Informações</button>
+            <button>Download</button>
+            <button>Doar</button>
+            <button>Registrar</button>
+            <button>Logar</button>
+        </div>
+    </nav>
+    <!-- headerBar -->
+    <div class="headerBar">
+        <div class="headerBarbox">
+            <img src="./img/img/logo-ragnatribe.png" alt="">
+            <div class="headerBarBtn">
+                <button>Início</button>
+                <button>Informações</button>
+                <button style="color: #00CB51">Download</button>
+                <button>Doar</button>
+                <button>Registrar</button>
+                <button>Logar</button>
+            </div>
+        </div>
+    </div>
+    <!-- buttonSlidebar -->
+    <div class="buttonSlidebar">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+    <!-- bodyBox -->
+    <div class="bodyBox">
+        <div class="bodyBox_p">
+            <p>FAÇA DOWNLOAD <strong>DO SERVIDOR</strong><span>.</span></p>
+            <p>Para jogar no <span>RagnaTribe</span> você deve ter o bRO/kRO mais recente instalado.</p>
+            <div class="p_3">
+                <div id="circuloVerde"></div>
+                <p>Caso você tenha a versão mais recente instalada em seu computador baixe a nossa versão Lite do Autopatcher.</p>
+            </div>
+            <div class="p_4">
+                <div id="circuloVerde"></div>
+                <p>Caso você não tenha a versão mais recente instalada em seu computador é necessário baixar a versão Full do Autopatcher.</p>
+            </div>
+            <p>AUTOPATCHER <strong>FULL</strong><span>.</span></p>
+            <p>É altamente recomendável que você baixe e instale nosso instalador de cliente completo:</p>
+            <p><span><strong>1.</strong> Baixe;</span><span><strong>2.</strong> Instale;</span><span><strong>3.</strong> Atualize.</span></p>
+            <div class="boxBtn">
+                <button>GOOGLE</button>
+                <button>MEGA</button>
+                <button>DIRETO</button>
+            </div>
+            <p>AUTOPATCHER <strong>LITE</strong><span>.</span></p>
+            <p>Certifique-se de que o bRO/kRO esteja atualizado, também é importante verificar se não há outros
+                servidores instalados nesta pasta. </p>
+            <p><span><strong>1.</strong> Baixe;</span><span><strong>2.</strong> Instale;</span><span><strong>3.</strong> Atualize.</span></p>
+            <div class="boxBtn">
+                <button>GOOGLE</button>
+                <button>MEGA</button>
+                <button>DIRETO</button>
+            </div>
+        </div>
+        <div class="bodyBox_img">
+            <img src="./img/img/Rectangle_1917.png" alt="">
+            <img src="./img/img/Hunter_1.png" alt="">
+        </div>
+    </div>
+    <!-- footerBG -->
+    <div class="footerBG">
+        <div class="footerBox">
+            <div class="VectorBox">
+                <img src="./img/img/Vector.png" alt="Vector">
+                <img src="./img/img/Vector_1.png" alt="Vector">
+                <img src="./img/img/Vector_2.png" alt="Vector">
+            </div>
+            <p>© Copyright - 2022 - RagnaTribe - Todos os direitos reservados.</p>
+            <p>© Copyright - 2022 - RagnaTribe - Todos os direitos reservados. Criado por: Ragnarok Brasil Service</p>
+            <img src="./img/img/logo-rbs.png" alt="logo">
+        </div>
+    </div>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

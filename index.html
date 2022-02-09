@@ -172,6 +172,10 @@
     <div class="rolandoNoServidor">
         <div class="rolandoNoServidor_p">
             <p>TUDO OQUE ESTÁ ROLANDO NO <strong>SERVIDOR</strong><span>.</span></p>
+            <div class="nex-prev">
+                <img class="owl_prev" src="./img/icone/Vector1.png" alt="">
+                <img class="owl_next" src="./img/icone/Vector2.png" alt="">
+            </div>
         </div>
         <div class="rServidorCarrosel owl-carousel col-lg-12 col-md-12">
             <div class="card">
@@ -338,13 +342,10 @@
     <script>
         $('.rServidorCarrosel').owlCarousel({
             responsiveClass: true,
-            nav: true,
-            navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
             loop: true,
             responsive: {
                 250: {
                     items: 2,
-                    nav: false,
                 },
                 375: {
                     items: 2,
@@ -353,7 +354,6 @@
                     autoplayTimeout: 3000,
                     autoplayHoverPause: true,
                     loop: true,
-                    nav: false,
                 },
                 768: {
                     items: 3,
@@ -362,23 +362,28 @@
                     autoplayTimeout: 3000,
                     autoplayHoverPause: true,
                     loop: true,
-                    nav: false,
                 },
                 1024: {
                     items: 4,
                     margin: 30,
-                    nav: false,
                 },
                 1440: {
                     items: 5,
                     margin: 30,
-                    nav: false,
                 },
             }
 
-        })
-        $(".owl-next").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/bbb447994b253bea1bb81b002e3413b2.svg" />');
-        $(".owl-prev").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/20bd4ea61b53e89f4d8c6531d59f19ab.svg" />');
+        });
+            var owl = $('.rServidorCarrosel');
+            owl.owlCarousel();
+            // Go to the next item
+            $('.owl_prev').click(function () {
+                owl.trigger('next.owl.carousel');
+            })
+            // Go to the previous item
+            $('.owl_next').click(function () {
+                owl.trigger('prev.owl.carousel');
+            })
         $('.guerraEmperium').owlCarousel({
             loop: true,
             margin: 0,
@@ -405,13 +410,6 @@
                     margin: 20,
                 },
             }
-        })
-    </script>
-    <!-- scroll efect on header -->
-    <script>
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("stick", window.scrollY > 0);
         })
     </script>
     <!-- slidebar script -->

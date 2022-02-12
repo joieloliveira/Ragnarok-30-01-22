@@ -1055,9 +1055,9 @@
 }
 .footerBG .footerBox .VectorBox img{
     margin: 20px;
-    width: 30px;
-    height: 30px;
-    margin-top: 30px;
+    width: 26px;
+    height: 24px;
+    margin-top: 32px
 }
 @media(max-width: 570px){
     .footerBG .footerBox img{
@@ -1364,4 +1364,23 @@
     .boxBtn button:nth-child(3){
         margin: 10px 10px 10px 0;
     }
+}
+/*===informacoesBG==============================================================================================*/
+.informacoesBG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #3A3847;
+}
+.informacoesBox_p{
+    display: flex;
+    width: 578px;
+    flex-direction: column;
+}
+.informacoesBox_img{
+    display: flex;
+    width: 578px;
+    flex-direction: column;
 }

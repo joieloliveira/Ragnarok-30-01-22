@@ -1366,6 +1366,14 @@
     }
 }
 /*===informacoesBG==============================================================================================*/
+#circuloVerde2{
+    width: 12px;
+    height: 10px;
+    background-color: #00CB51;
+    border-radius: 50%;
+    margin-right: -12px;
+    margin-left: 10px;
+}
 .informacoesBG{
     display: flex;
     align-items: center;
@@ -1376,11 +1384,101 @@
 }
 .informacoesBox_p{
     display: flex;
-    width: 578px;
+    width: 600px;
+    padding: 0 20px 0 20px;
     flex-direction: column;
+    margin-top: 90px;
 }
+.informacoesBox_p p{
+    margin: 0;
+}
+.informacoesBox_p span{
+    color: #00CB51;
+    font-size: 150%;
+}
+.informacoesBox_p .p_informacoes{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+}
+.informacoesBox_p .p_informacoes > p{
+    margin-left: 20px;
+}
+.informacoesBox_p p:nth-child(1){
+    font-size: 24px;
+}
+.informacoesBox_p p:nth-child(7){
+    font-size: 24px;
+}
+.informacoesBox_p p:nth-child(17){
+    font-size: 24px;
+}
+/*opacidade*/
+.informacoesBox_p p:nth-child(18){
+    color: #605E70;
+}
+.informacoesBox_p p:nth-child(19){
+    color: #605E70;
+}
+.informacoesBox_p p:nth-child(20){
+    color: #605E70;
+}
+.informacoesBox_p p:nth-child(21){
+    color: #605E70;
+}
+.informacoesBox_p p:nth-child(22){
+    color: #605E70;
+}
+.informacoesBox_p p:nth-child(23){
+    color: #605E70;
+    margin-bottom: 60px;
+}
+/*===================*/
 .informacoesBox_img{
     display: flex;
-    width: 578px;
+    width: 600px;
     flex-direction: column;
+    padding: 0 20px 0 20px;
+    margin-top: 160px;
+}
+.informacoesBox_img img:nth-child(1){
+    width: 578px;
+    height: 395px;
+    margin-top: -10px
+}
+.informacoesBox_img img:nth-child(2){
+    margin-top: -425px;
+    margin-left: -30px;
+    width: 467px;
+    height: 425px;
+}
+.informacoesBox_img p{
+    margin: 0;
+    color: rgba(96, 94, 112, 1);
+}
+.informacoesBox_img p:nth-child(3){
+    margin-top: 40px;
+}
+.informacoesBox_img p:nth-child(8){
+    margin-bottom: 60px;
+}
+@media(max-width: 1199px){
+    .informacoesBG{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .informacoesBox_img img:nth-child(1){
+        display: none;
+    }
+    .informacoesBox_img img:nth-child(2){
+        display: none;
+    }
+    .informacoesBox_img p:nth-child(3){
+        margin-top: 0px;
+    }
+    .informacoesBox_img{
+        margin-top: -60px;
+    }
 }
